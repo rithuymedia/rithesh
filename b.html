@@ -1,0 +1,147 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+#main{
+	padding:20px;
+	border:2px solid black;
+	margin:20px auto;
+	width:80%;
+}
+.toblock{
+	display:block;
+	margin-top:20px;
+	margin-right:20px;
+	margin-bottom:20px;
+}
+header{
+	font-size:50px;
+	text-align:center;
+	margin-bottom:20px;
+	background-color:#66c2ff;
+	color:white;
+	padding:20px 0;
+}
+input{
+	height:30px;
+	margin-right:10px;
+	padding-left:10px;
+	font-size:20px;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	background-color:black;
+	color:white;
+}
+#no{
+	border:1px solid #a9a9a9;
+	font-size:20px;
+	padding:6px;
+}
+label{
+	font-size:20px;
+	vertical-align:middle;
+	padding-right:20px;
+}
+#male, #female, #tick{
+	vertical-align:middle;
+	margin-left:20px;
+}
+span{
+	font-size:20px;
+}
+footer{
+	background-color:#66c2ff;
+	color:white;
+} 
+#footerinfo{
+	padding:10px;
+}
+h3{
+	padding-top:10px;
+	padding-right:10px;
+	padding-left:10px;
+}
+
+@media print {
+        body, #footerinfo{
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-size: 1em;
+            color: purple;
+            margin-top: 2cm;
+            margin-right: 2cm;
+            margin-bottom: 1.5cm;
+            margin-left: 2cm
+        } 
+        }
+
+</style>
+</head>
+
+<body>
+<div id="main">
+	<header>FresherJob</header>
+	<section>
+		<form>
+			<img src="C:\Users\YML\Desktop\image.png" style="width:100px;height:100px;"><br />
+			<input type="file" style="padding-left:0px;"><br />
+			
+			<input style="margin-top:20px;" type="text" name="first_name" placeholder="First name" min="3" max="20">
+			<input  class="toblock" style="display:inline;" type="text" name="last_name" placeholder="Last name" min="3" max="20"><br />
+			
+			<span>Gender</span><input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="Female" ><label for="female" >Female</label><br />
+			
+			<input style="margin-top:10px;margin-bottom:0px;" type="number" name="age" placeholder="Age" min="20" >
+			<div  class="toblock" style="display:inline;">
+				<span id="no">+91</span> <input type="tel" placeholder="Mobile no" size="15" maxlength="10"><br />
+			</div>
+		
+			<input style="margin-top:20px;" type="email" name="Email" placeholder="Email">
+			<input class="toblock" style="display:inline;margin-bottom:5px;"   type="password" name="Password" placeholder="Password">
+			
+			
+			<input class="toblock" type="number" placeholder="Total experience(years)">
+			<input class="toblock" list="industry" placeholder="Industry" multiple>
+				<datalist id="industry">
+					<option value = "Any">
+					<option value = "Automotive">
+					<option value = "Banking">
+					<option value = "Bio Technology">
+					<option value = "Chemicals">
+					<option value = "Construction">
+					<option value = "Education">
+					<option value = "Entertainment">
+					<option value = "Insurance">
+					<option value = "IT/computers - Hardware">
+					<option value = "IT/computers - Software">
+					<option value = "Pharmaceutical">					
+				</datalist>	
+			
+			<input class="toblock" list="function" placeholder="Function" multiple>
+				<datalist id="function">
+					<option value = "Admin">
+					<option value = "Customer Service">
+					<option value = "Finance & Accounts">
+					<option value = "Human Resources">
+					<option value = "IT">
+					<option value = "Legal">
+					<option value = "Marketing & Communications">
+					<option value = "Purchase">
+				</datalist>
+			
+
+			<input style="padding-left:0px;" id="tick" type="checkbox" ><span>I have read and agree to FreshJobs's <a href="">privacy statement</a> , <a href="">terms of use</a> and <a href="">default preferences</a></span>.
+			<input class="toblock" type="submit" value="Upload">
+		</form>
+	</section>
+	<footer>
+	<h3>Copyrights</h3>
+	<div id="footerinfo">Copyright is a legal right, existing globally in many countries, that grants the creator of an original work exclusive rights to determine and decide whether, and under what conditions, this original work may be used by others.This is usually only for a limited time. The exclusive rights are not absolute but limited by limitations and exceptions to copyright law, including fair use. A major limitation on copyright on ideas is that copyright protects only the original expression of ideas, and not the underlying ideas themselves.
+	</div>
+</div>
+</body>
+</html>
