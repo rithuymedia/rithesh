@@ -1,61 +1,70 @@
+@import 'variables.css';
+
 *{
     box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
 }
 
 body{
     margin:0px;
     padding:0px;
-    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    /* font-family: ProximaNova,Arial,Helvetica Neue,sans-serif; */
+    font-family: Montserrat, Arial, Helvetica Neue, sans-serif;
 }
 
 header#main{
-    height: 540px;
+    /* height: 540px; */
+    height: 54rem;
     position: relative;
-    padding: 0px 20px;
+    padding: 0px 2rem;
 }
 
 header#main section{
-    min-width: 1200px;
-    max-width: 1200px;
+    min-width: var(--min-in-con-width);
+    max-width: var(--max-in-con-width);
     margin: 0px auto;
 }
 
 header#main>section>div{
-    width: 620px;
-    height: 500px;
+    width: 62rem;
+    height: 50rem;
     display: inline-block;
-    margin-right: 60px;
-    margin-top: 50px;
+    margin-right: 6rem;
+    margin-top: 5rem;
 }
 
 header#swiggy{
-    height: 80px;
-    line-height: 80px;
+    height: 8rem;
+    line-height: 8rem;
+    margin-bottom: 5rem;
 }
 
 #swiggy img{
-    height: 60px;
-    width: 180px;
+    height: 6rem;
+    width: 18rem;
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 0.5rem;
 }
 
 #swiggy div{
     display: inline-block;
     float: right;
-    height: 80px;
-    line-height: 80px;
+    height: 8rem;
+    line-height: 8rem;
 }
 
 #swiggy div a{
     text-decoration: none;
     color: black;
-    padding: 10px 25px;
-    font-size: 16px;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 #swiggy div a:first-child:hover{
-    color: #fc8019;
+    color: var(--default-orange-color);
 }
 
 #swiggy div a:nth-child(2) {
@@ -65,8 +74,8 @@ header#swiggy{
 }
 
 header#main div:first-child h1#hungry{
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 4rem;
+    margin-bottom: 1rem;
     position: relative;
     animation: moveUp 2s ease-out;
     animation-iteration-count: infinite;
@@ -75,25 +84,25 @@ header#main div:first-child h1#hungry{
 @keyframes moveUp{
     0%{
         opacity:0;
-        top: 10px;
+        top: 1rem;
     }
     10%{
         opacity: 0.5;
-        top: 5px;
+        top: .5rem;
     }
     20%{
         opacity: 1;
-        top: 0px;
+        top: 0rem;
     }
 
 }
 
 header#main section div:first-child h3#hungry-text{
-    font-size: 24px;
+    font-size: 2.4rem;
     margin: 0px;
     font-weight: 300;
     color: #686b78;
-    margin-bottom: 35px;
+    margin-bottom: 4rem;
 }
 
 div#form {
@@ -101,16 +110,16 @@ div#form {
 }
 
 div#form input{
-    height: 58px;
-    width: 600px;
-    padding-left: 15px;
-    font-size: 18px;
-    caret-color: #fc8019;
+    height: 5.8rem;
+    width: 60rem;
+    padding-left: 1.5rem;
+    font-size: 1.8rem;
+    caret-color: var(--default-orange-color);
     border: 1px solid #bebfc5;
 }
 
 div#form input:focus{
-    border-color: #fc8019;
+    border-color:var(--default-orange-color);
     outline: none;
 }
 
@@ -118,7 +127,7 @@ div#form>span:nth-child(2){
     position: absolute;
     top: 25%;
     left: 60%;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
 }
 div#form>span:nth-child(2):hover{
     background: #e9e9eb;
@@ -126,36 +135,36 @@ div#form>span:nth-child(2):hover{
 }
 
 div#form>span:nth-child(2) img{
-    width: 12px;
-    height: 12px;
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 div#form>span:nth-child(2) span{
     color: #535665;
-    font-size: 14px;
-    padding-left: 5px;
+    font-size: 1.4rem;
+    padding-left: 0.5rem;
     font-weight: 500;
 }
 
 div#form span:nth-child(3){
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     color: white;
-    background-color: #fc8019;
-    padding: 20.5px;
+    background-color: var(--default-orange-color);
+    padding: 2.05rem;
     position: absolute;
-    top: -0.8px;
+    top: -0.08rem;
     right: 0;
     cursor: pointer;
 }
 
 div#places{
-    margin-top: 60px;
-    width: 500px;
+    margin-top: 6rem;
+    width: 50rem;
 }
 div#places a{
     font-weight: 500;
-    font-size: 13px;
+    font-size: 1.3rem;
     margin-right: 8px;
     color: #93959f;
     line-height: 1.5;
@@ -165,28 +174,28 @@ div#places a{
 div#places a:nth-child(even){
     text-decoration: none;
     font-weight: 500;
-    font-size: 13px;
-    margin-right: 8px;
+    font-size: 1.3rem;
+    margin-right: 0.8rem;
     line-height: 1.5;
     letter-spacing: -.3px;
     color: #a9abb2;
 }
 
 header div#food-img{
-    height: 540px;
-    background: transparent url("../photos/Lunch2-new_xexpaz.jpg") no-repeat 100%;
+    height: 54rem;
+    background: transparent url("../photos/Lunch3-new_mkqxdb.jpg") no-repeat 100%;
     background-size: cover;
     position: absolute;
     top: 0px;
     right: 0px;
     left: calc(50% + 80px);
-    min-width: 550px;
+    min-width: 55rem;
 }
 
 @media (max-width:1250px){
     header div#food-img{
-        left: 700px;
-        width: 540px; 
+        left: 70rem;
+        width: 54rem; 
     }
 }
 
@@ -200,77 +209,77 @@ header div#food-img{
 
 section#three-images{
     background: #2b1e16;
-    height: 402px;
-    padding: 0px 20px;
-    min-width: 1250px;
+    height: 40.2rem;
+    padding: 0px 2rem;
+    min-width: var(--min-out-con-width);
     
 }
 
 section#three-images section{
-    max-width: 1200px;
-    min-width: 1200px;
+    max-width: var(--max-in-con-width);
+    min-width: var(--min-in-con-width);
     display: flex;
     justify-content: space-between;
     margin: 0px auto;
-    height: 322px;
-    padding-bottom: 80px;
+    height: 32.2rem;
+    padding-bottom: 8rem;
 }
 
 section#three-images section div.image-section{
-    width: 260px;
-    height: 322px;
+    width: 26rem;
+    height: 32.2rem;
 }
 
 section#three-images section div.image-section div.image{
-    width: 260px;
-    height: 250px;
+    width: 26rem;
+    height: 25rem;
     text-align: center;
 }
 
 section#three-images section div.image-section:nth-child(1) div.image img{
-    width: 105px;
-    height: 199px;
+    width: 10.5rem;
+    height: 19.9rem;
 }
 
 section#three-images section div.image-section:nth-child(2) div.image img{
-    width: 112px;
-    height: 206px;
+    width: 11.2rem;
+    height: 20.6rem;
 }
 
 section#three-images section div.image-section:nth-child(3) div.image img{
-    width: 124px;
-    height: 188px;
+    width: 12.4rem;
+    height: 18.8rem;
 }
 
 section#three-images section div.image-section div.heading{
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
     color: white;
 }
 
 section#three-images section div.image-section div.heading-text{
-    font-size: 15px;
-    width: 260px;
+    font-size: 1.5rem;
+    width: 26rem;
     text-align: center;
     color: white;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 
     /* section share */
 
 section#share{
-    height: 570px;
-    padding:0px 20px;
-    min-width: 1250px;
+    height: 57rem;
+    padding:0 2rem;
+    min-width: var(--min-out-con-width);
     overflow: hidden;
 }
 
 section#share section{
-    min-width: 1200px;
-    max-width: 1200px;
-    height: 570px;
+    min-width: var(--min-in-con-width);
+    max-width: var(--max-in-con-width);
+    height: 57rem;
     position: relative;
     margin: 0px auto;
 
@@ -278,94 +287,111 @@ section#share section{
 
 section#share section>div{
     display: inline-block;
-    margin-top: 150px;
+    margin-top: 15rem;
 }
 section#share section div div#share-head{
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 600;
-    width: 300px;
+    width: 30rem;
 }
 
 section#share section div div#share-text{
-    font-size: 20px;
-    width: 400px;
+    font-size: 2rem;
+    width: 40rem;
     font-weight: 300;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
     color: #7e808c;
 
 }
 
 section#share section div img#play, section#share section div img#ios{
-    width: 180px;
-    height: 54px;
+    width: 18rem;
+    height: 5.4rem;
     cursor: pointer;
 }
 
 section#share section div img#play{
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 section#share section img#pixel, section#share section img#iphone{
-    width: 384px;
-    height: 489px;
+    width: 38.4rem;
+    height: 48.9rem;
 }
 
 section#share section img#pixel{
     position: absolute;
     top: 0;
-    right: 300px;
+    right: 30rem;
 }
 
 section#share section img#iphone{
     position: absolute;
     bottom: 0;
-    right: -45px;
+    right: -4.5rem;
 
 }
 
     /* section cities */
 
 section#cities{
-    height: 127px;
-    padding: 0px 20px;
-    background: #fc8019;
+    height: 12.7rem;
+    padding: 0 2rem;
+    background: var(--default-orange-color);
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    min-width: 1250px;
+    min-width: var(--min-out-con-width);
 }
 
 section#cities div{
-    max-width: 1200px;
-    min-width: 1200px;
-    height: 63px;
-    margin: 0px auto;    
+    max-width: var(--max-in-con-width);
+    min-width: var(--min-in-con-width);
+    height: 6.3rem;
+    margin: 0 auto;
+    text-align: center;    
 
 }
 
 section#cities div a{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
     color: #fff;
-    margin-right: 40px;
+    margin-right: 3.7rem;
     text-decoration: none;
+    line-height: 1.2;
+    width: max-content;
+}
+
+
+section#cities div a:after{
+    content: "\2022";
+    position: relative;
+    top: 0px;
+    left: 2rem;
+    
+}
+
+
+section#cities div a:hover{
+    font-weight: bold;
 }
 
     /* footer */
 
 footer{
-    height: 411px;
+    height: 41.1rem;
     background-color: black;
-    padding: 0px 20px;
-    min-width: 1250px;
+    padding: 0 2rem;
+    min-width: var(--min-out-con-width);
 }
 
 footer section{
-    max-width: 1200px;
-    min-width: 1200px;
-    margin: 0px auto;
-    padding-top: 80px;
+    max-width: var(--max-in-con-width);
+    min-width: var(--min-in-con-width);
+    margin: 0 auto;
+    padding-top: 8rem;
     
 }
 
@@ -376,17 +402,17 @@ footer section header{
 }
 
 footer section header>div{
-    width: 300px;
-    height: 249px;
+    width: 30rem;
+    height: 24.9rem;
 }
 
 footer section header div:last-child{
-    width: 200px;
+    width: 20rem;
 }
 
 footer section header div div{
     color: gray;
-    font-size: 15px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -394,16 +420,17 @@ footer section header div div{
 footer section header div ul{
     text-decoration: none;
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    margin-top: 30px;
+    margin: 0;
+    padding: 0;
+    margin-top: 3rem;
 
 }
 
 footer section header div ul li{
     color: white;
-    margin-top: 15px;
+    margin-top: 1.5rem;
     width: max-content;
+    font-size: 1.7rem;
     
 }
 footer section header div ul li:hover{
@@ -413,9 +440,9 @@ footer section header div ul li:hover{
 
 footer section header div:last-child img{
     display: inline-block;
-    width: 200px;
-    height: 65px;
-    margin-bottom: 30px;
+    width: 20rem;
+    height: 6.5rem;
+    margin-bottom: 3rem;
     cursor: pointer;
     transition: transform 0.75s;
 } 
@@ -428,39 +455,40 @@ footer section header div:last-child img:hover{
 
 
 footer section footer{
-    margin: 29px 0px;
-    padding: 0px;
+    margin: 2.9rem 0;
+    padding: 0;
     color: white;
     font-weight: 300;
-    min-width: 1200px;
-    height: 27px;
+    min-width: var(--min-in-con-width);
+    height: 2.7rem;
 }
 
 footer section footer a{
     display: inline-block;
-    width: 142px;
-    height: 27px;
+    width: 14.2rem;
+    height: 2.7rem;
 }
 
 footer section footer div:nth-child(2){
     display: inline-block;
-    width: 866px;
-    height: 27px;
+    width: 86.6rem;
+    height: 2.7rem;
     text-align: center;
     vertical-align: top;
-    line-height: 27px;
+    line-height: 2.7rem;
+    font-size: 2rem;
 }
 footer section footer div:nth-child(3){
     display: inline-flex;
     justify-content: space-around;
-    width: 180px;
-    height: 27px;
+    width: 18rem;
+    height: 2.7rem;
     vertical-align: top;
 }
 
 footer section footer div:nth-child(3) img{
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
     transition: transform 0.2s;
 }
 footer section footer div:nth-child(3) img:hover{

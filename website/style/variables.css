@@ -1,0 +1,9 @@
+
+:root{
+    --min-in-con-width: 120rem;
+    --max-in-con-width: 120rem;
+    
+    --min-out-con-width: 125rem;
+
+    --default-orange-color: #fc8019;
+}
